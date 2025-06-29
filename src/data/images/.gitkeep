@@ -1,0 +1,2 @@
+// Este archivo almacenará las imágenes subidas de los productos localmente.
+// Las imágenes se guardarán aquí mediante multer.

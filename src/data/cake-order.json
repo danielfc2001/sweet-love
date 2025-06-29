@@ -1,0 +1,75 @@
+[
+  {
+    "category": "Cake Flavour",
+    "options": [
+      "Vanilla",
+      "Strawberry",
+      "Chocolate",
+      "Tres Leches",
+      "Red Velvet",
+      "Other"
+    ]
+  },
+  {
+    "category": "Filling",
+    "options": [
+      "Custom Creams",
+      "Chocolate Ganache",
+      "Strawberry Ganache",
+      "Vanilla Ganache",
+      "Coconut",
+      "Guava Jam",
+      "Cherry Jam",
+      "Nutella",
+      "Caramel Cream",
+      "Other"
+    ]
+  },
+  {
+    "category": "Inside the Cake",
+    "options": [
+      "Fruit",
+      "Chocolate Chips",
+      "White Chocolate Chips",
+      "Nuts",
+      "Other"
+    ]
+  },
+  {
+    "category": "Cake Size",
+    "options": [
+      "6\"",
+      "8\"",
+      "9.4\"",
+      "11\""
+    ]
+  },
+  {
+    "category": "Cake Shape",
+    "options": [
+      "Round",
+      "Rectangular",
+      "Heart"
+    ]
+  },
+  {
+    "category": "Icing",
+    "options": [
+      "Meringue",
+      "Buttercream",
+      "Ganache",
+      "Other"
+    ]
+  },
+  {
+    "category": "Decoration",
+    "options": [
+      "Happy Birthday",
+      "Name",
+      "Butterflies",
+      "Crowns",
+      "Pearls",
+      "Other"
+    ]
+  }
+]

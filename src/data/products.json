@@ -1,0 +1,233 @@
+[
+  {
+    "id": "e8d5b3a0-77d9-4ca6-a1c9-a64e7654f534",
+    "name": "Mini Cake 4 inch",
+    "description": "Mini sponge cake with pastry costum cream and meringue topping (Flavors: Chocolate, Strawberry, Coconut, Cherry, Vanilla)",
+    "price": 30,
+    "category": "Cake"
+  },
+  {
+    "id": "c6161810-fab7-4e48-b5f6-65932caa4364",
+    "name": "Pound Cake 9 Inch",
+    "description": "Vanilla pound cake with fruit (raisins, orange, tutifrutis, others)",
+    "price": 38.5,
+    "category": "Cake"
+  },
+  {
+    "id": "3b303c96-33c5-40b0-bcd7-a0b0b880d537",
+    "name": "Impossible Cake  8 Inch",
+    "description": "Two-layer cake. The top layer is flan and the bottom layer is cake. (Flavors: Chocolate, Strawberry, Coconut, Cherry, Vanilla)",
+    "price": 69.45,
+    "category": "Cake"
+  },
+  {
+    "id": "d3329957-7572-453a-95a5-2174cdb21e79",
+    "name": "Cake 8 inch",
+    "description": "Sponge cake with pastry costum cream and meringue topping (Flavors: Chocolate, Strawberry, Coconut, Cherry, Vanilla)\n",
+    "price": 85,
+    "category": "Cake"
+  },
+  {
+    "id": "05603ffb-f0a3-43c3-a8b0-6610eb794c28",
+    "name": "Cake 9.4 inch",
+    "description": "Sponge cake with pastry costum cream and meringue topping (Flavors: Chocolate, Strawberry, Coconut, Cherry, Vanilla)\n",
+    "price": 105,
+    "category": "Cake"
+  },
+  {
+    "id": "bd7c1f49-7ddb-4aae-ac6a-ee8598a450fc",
+    "name": "Cake 11 inch",
+    "description": "Sponge cake with pastry costum cream and meringue topping (Flavors: Chocolate, Strawberry, Coconut, Cherry, Vanilla)\n",
+    "price": 120,
+    "category": "Cake"
+  },
+  {
+    "id": "404398b1-002a-4da6-9776-abf6b52418f2",
+    "name": "Rectangular Cake",
+    "description": "Sponge cake with pastry costum cream and meringue topping (Flavors: Chocolate, Strawberry, Coconut, Cherry, Vanilla)\n",
+    "price": 150,
+    "category": "Cake"
+  },
+  {
+    "id": "f60304d8-43a2-44e0-89df-5b914f79fd1e",
+    "name": "Heart Cake 8 inch",
+    "description": "Sponge cake with pastry costum cream and meringue topping (Flavors: Chocolate, Strawberry, Coconut, Cherry, Vanilla)\n",
+    "price": 170,
+    "category": "Cake"
+  },
+  {
+    "id": "892a51e1-4a20-4b34-9ad6-e9e266a10007",
+    "name": "Heart Cake 11 inch",
+    "description": "Sponge cake with pastry costum cream and meringue topping (Flavors: Chocolate, Strawberry, Coconut, Cherry, Vanilla)\n",
+    "price": 250,
+    "category": "Cake"
+  },
+  {
+    "id": "4335f54e-6fc5-4adf-9eea-036247b65506",
+    "name": "Cake Mousse 8 inch",
+    "description": "Mousse cream (Chocolate, Strawberry or almond) with two layers of panetela, jelly or nuts and natural fruits\n",
+    "price": 150,
+    "category": "Cake"
+  },
+  {
+    "id": "959d9343-646c-4a12-99d2-8d997e8abb46",
+    "name": "Cheese Cake 8inch",
+    "description": "Cream cheese, with a layer of cookies on the base and covered with natural fruit jelly.\n",
+    "price": 100,
+    "category": "Cake"
+  },
+  {
+    "id": "439a988b-0301-4d15-a70b-0e2ea1ad4a76",
+    "name": "Pound Cake in Slice",
+    "description": "Vanilla pound cake with fruit (raisins, orange, tutifrutis, others)\n",
+    "price": 2,
+    "category": "Desserts"
+  },
+  {
+    "id": "b3b872d6-d29a-49f0-b336-517c74e4a5cc",
+    "name": "Pound Cake in 3 inch rectangles",
+    "description": "3-inch rectangular pound cake in different flavors: orange, strawberry and chocolate\n",
+    "price": 2.55,
+    "category": "Desserts"
+  },
+  {
+    "id": "dca6d1a5-6269-4f84-809f-7bcf58f3b558",
+    "name": "Butter Cookies with Jam",
+    "description": "Butter Cookies with Jam (Guava) (If the order is greater than 60 units the price is $1.80 for each one)\n",
+    "price": 2,
+    "category": "Desserts"
+  },
+  {
+    "id": "cd5d165b-f159-4b93-bf46-bc1e1686b1de",
+    "name": "Cupcakes",
+    "description": "Cupcake with meringue topping\n",
+    "price": 4,
+    "category": "Desserts"
+  },
+  {
+    "id": "d8dea7ec-0c5e-45bf-bfa7-337381680187",
+    "name": "Eclair",
+    "description": "Cream eclair with chocolate coating\n",
+    "price": 3.1,
+    "category": "Desserts"
+  },
+  {
+    "id": "923f95ca-9df8-4e91-8906-4e9dbec32ae4",
+    "name": "Puffs",
+    "description": "Cream puffs with chocolate coating\n",
+    "price": 2,
+    "category": "Desserts"
+  },
+  {
+    "id": "4631bb2f-a626-4d9b-82f1-55a494fef691",
+    "name": "Brownie",
+    "description": "Small chocolate cake\n",
+    "price": 6.95,
+    "category": "Desserts"
+  },
+  {
+    "id": "fe4bc125-dd66-4b01-aeb6-9cd031ce5fe3",
+    "name": "Latin Tres Leche 4onz",
+    "description": "Vanilla cakes soaked in three milks (Eva milk, Conde milk and Cream)\n",
+    "price": 4,
+    "category": "Desserts"
+  },
+  {
+    "id": "f69ff96b-2360-4618-a987-f7ed83d7c2c3",
+    "name": "Latin Tres Leche 8onz",
+    "description": "Vanilla cakes soaked in three milks (Eva milk, Conde milk and Cream)\n",
+    "price": 8,
+    "category": "Desserts"
+  },
+  {
+    "id": "e072ead7-3cfa-4995-b1bc-fd824c339fbe",
+    "name": "Mini Cake Mousse 3.1inch",
+    "description": "Mousse cream (Chocolate, Strawberry or almond) with two layers of panetela, jelly or nuts and natural fruits\n",
+    "price": 15,
+    "category": "Desserts"
+  },
+  {
+    "id": "485e234a-6caf-4264-b68e-e89a0428bb07",
+    "name": "Mini Cake Mousse 2.6inch",
+    "description": "Mousse cream (Chocolate, Strawberry or almond) with two layers of panetela, jelly or nuts and natural fruits\n",
+    "price": 8,
+    "category": "Desserts"
+  },
+  {
+    "id": "6baf4ea3-c812-43bb-84be-cdd04fc6721e",
+    "name": "Mini Cheese Cake 3.1inch",
+    "description": "Cream cheese, with a layer of cookies on the base and covered with natural fruit jelly.\n",
+    "price": 14,
+    "category": "Desserts"
+  },
+  {
+    "id": "19ad343e-9464-4a85-85e6-a212a38dbb7e",
+    "name": "Cake Roll ",
+    "description": "Sponge cake with pastry costum cream and chocolate coating\n",
+    "price": 6,
+    "category": "Desserts"
+  },
+  {
+    "id": "24e24031-e3fa-4034-8a81-fa0a6cb75cb1",
+    "name": "Donuts",
+    "description": "Fried sweet bread with icing on top\n",
+    "price": 4,
+    "category": "Desserts"
+  },
+  {
+    "id": "448b9691-6ba6-407c-a370-07bfa54e37fd",
+    "name": "Impossible Cake in Slice",
+    "description": "Two-layer cake. The top layer is flan and the bottom layer is cake. (Flavors: Chocolate, Strawberry, Coconut, Cherry, Vanilla)\n",
+    "price": 9,
+    "category": "Desserts"
+  },
+  {
+    "id": "c6c0ff79-b577-4437-8c7f-d3efa92c9019",
+    "name": "Cake in Slice",
+    "description": "Sponge cake with pastry costum cream and meringue topping (Flavors: Chocolate, Strawberry, Coconut, Cherry, Vanilla)\n",
+    "price": 12.75,
+    "category": "Desserts"
+  },
+  {
+    "id": "43cd63df-efb6-4a0e-9fea-515f9cce655b",
+    "name": "Cheese Roll",
+    "description": "Cheese Roll\n",
+    "price": 3.5,
+    "category": "Bakery"
+  },
+  {
+    "id": "8cea86d6-56c5-4163-bb18-3ba7a6112593",
+    "name": "Sausage Roll",
+    "description": "Sausage Roll\n",
+    "price": 3,
+    "category": "Bakery"
+  },
+  {
+    "id": "daf41f07-b7e8-4b66-bbe2-8fb997fcd56a",
+    "name": "Mini Pizza",
+    "description": "Mini Pizza\n",
+    "price": 4,
+    "category": "Bakery"
+  },
+  {
+    "id": "ac2c04d6-3214-4612-923a-c9f3333ff388",
+    "name": "Sandwich Donuts",
+    "description": "Sandwich Donuts\n",
+    "price": 12,
+    "category": "Bakery"
+  },
+  {
+    "id": "8e5fb8f7-5b99-4f84-a1dc-4bf4350186cd",
+    "name": "Mini Quich",
+    "description": "Mini Quich\n",
+    "price": 6,
+    "category": "Bakery"
+  },
+  {
+    "id": "ffe58762-d4f5-4ffe-919d-f8e9caf70ee0",
+    "name": "Ham and Olive Bread",
+    "description": "Ham and Olive Bread\n",
+    "price": 8,
+    "category": "Bakery"
+  }
+]
