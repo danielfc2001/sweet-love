@@ -1,2 +1,11 @@
 node_modules
 .env
+client/src
+client/public
+client/.gitignore
+client/eslint.config.js
+client/index.html
+client/package-lock.json
+client/package.json
+client/README.md
+client/vite.config.js
