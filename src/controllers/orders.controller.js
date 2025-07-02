@@ -1,5 +1,6 @@
 import fs from "fs/promises";
 import path from "path";
+import nodemailer from "nodemailer";
 
 const dataPath = path.resolve("src/data/cake-order.json");
 
@@ -19,6 +20,34 @@ export const sendCakeOrder = async (req, res) => {
   const data = req.body;
   console.log(data);
   try {
+    const transporter = nodemailer.createTransport({
+      service: "gmail",
+      auth: {
+        user: process.env.EMAIL_USER,
+        pass: process.env.EMAIL_PASSWORD,
+      },
+    });
+    const mailOptions = {
+      from: `"Customer email" <${data.email}>`,
+      to: process.env.ORDERS_EMAIL,
+      subject: "New Cake Order",
+      text:
+        `New cake order from ${data.name} (${data.email})\n\n` +
+        `First Order: ${data.firstOrder}\n` +
+        `Cake Shape: ${data["Cake Shape"]}\n` +
+        `Cake Flavor: ${data["Cake Flavour"]}\n` +
+        `Cake Size: ${data["Cake Size"]}\n` +
+        `Cake Decoration: ${data["Decoration"]}\n` +
+        `Cake Filling: ${data["Filling"]}\n` +
+        `Cake Icing: ${data["Icing"]}\n` +
+        `Inside the cake: ${data["Inside the cake"]}\n` +
+        `Special Instructions: ${data.instructions}\n\n` +
+        `Delivery Date: ${data.eventDate}`,
+    };
+    const response = await transporter.sendMail(mailOptions);
+    if (!response) {
+      throw { errorStatus: 500, message: "Error sending the order email." };
+    }
     res.status(200).json({ message: "Order sended successfully." });
   } catch (error) {
     console.log(error);
