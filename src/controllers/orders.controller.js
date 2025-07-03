@@ -33,14 +33,31 @@ export const sendCakeOrder = async (req, res) => {
       subject: "New Cake Order",
       text:
         `New cake order from ${data.name} (${data.email})\n\n` +
+        `Phone numer: ${data.phone}\n` +
         `First Order: ${data.firstOrder}\n` +
         `Cake Shape: ${data["Cake Shape"]}\n` +
-        `Cake Flavor: ${data["Cake Flavour"]}\n` +
+        `Cake Flavor: ${
+          data["Cake Flavour"] === "Other"
+            ? data["Cake Flavour_other"]
+            : data["Cake Flavour"]
+        }\n` +
         `Cake Size: ${data["Cake Size"]}\n` +
-        `Cake Decoration: ${data["Decoration"]}\n` +
-        `Cake Filling: ${data["Filling"]}\n` +
-        `Cake Icing: ${data["Icing"]}\n` +
-        `Inside the cake: ${data["Inside the cake"]}\n` +
+        `Cake Decoration: ${
+          data["Decoration"] === "Other"
+            ? data["Decoration_other"]
+            : data["Decoration"]
+        }\n` +
+        `Cake Filling: ${
+          data["Filling"] === "Other" ? data["Filling_other"] : data["Filling"]
+        }\n` +
+        `Cake Icing: ${
+          data["Icing"] === "Other" ? data["Icing_other"] : data["Icing"]
+        }\n` +
+        `Inside the cake: ${
+          data["Inside the Cake"] === "Other"
+            ? data["Inside the Cake_other"]
+            : data["Inside the Cake"]
+        }\n` +
         `Special Instructions: ${data.instructions}\n\n` +
         `Delivery Date: ${data.eventDate}`,
     };

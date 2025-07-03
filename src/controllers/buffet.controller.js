@@ -1,6 +1,7 @@
 import fs from "fs/promises";
 import path from "path";
 import { v4 as uuidv4 } from "uuid";
+import nodemailer from "nodemailer";
 
 const dataPath = path.resolve("src/data/buffet-order.json");
 
@@ -39,9 +40,38 @@ export const getBuffetProduct = async (req, res) => {
   }
 };
 
-export const sendBuffetOrder = (req, res) => {
+export const sendBuffetOrder = async (req, res) => {
   try {
     console.log(req.body);
+    const { client, buffet } = req.body;
+    const transporter = nodemailer.createTransport({
+      service: "gmail",
+      auth: {
+        user: process.env.EMAIL_USER,
+        pass: process.env.EMAIL_PASSWORD,
+      },
+    });
+    let buffetText = "";
+    for (const item of buffet) {
+      for (const [key, value] of Object.entries(item)) {
+        buffetText += `  - ${key.toUpperCase()}: ${value}\n`;
+      }
+    }
+    const mailOptions = {
+      from: `"Customer email" <${client.email}>`,
+      to: process.env.ORDERS_EMAIL,
+      subject: "New Buffet Order",
+      text:
+        `New cake order from ${client.name} (${client.email})\n\n` +
+        `Phone numer: ${client.phone}\n` +
+        `First Order: ${client.firstOrder}\n` +
+        `Delivery Date: ${client.eventDate}\n` +
+        `Buffet Selection:\n${buffetText}`,
+    };
+    const response = await transporter.sendMail(mailOptions);
+    if (!response) {
+      throw { errorStatus: 500, message: "Error sending the order email." };
+    }
     res.status(200).json({ message: "Order sended successfully." });
   } catch (error) {
     console.log(error);
