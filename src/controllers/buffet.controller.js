@@ -51,22 +51,29 @@ export const sendBuffetOrder = async (req, res) => {
         pass: process.env.EMAIL_PASSWORD,
       },
     });
-    let buffetText = "";
+    let buffetHtml = "<ul style='padding-left:16px'>";
     for (const item of buffet) {
       for (const [key, value] of Object.entries(item)) {
-        buffetText += `  - ${key.toUpperCase()}: ${value}\n`;
+        buffetHtml += `<li><strong style="color:#d2691e">${key.toUpperCase()}</strong>: <span style="color:#333">${value}</span></li>`;
       }
     }
+    buffetHtml += "</ul>";
     const mailOptions = {
       from: `"Customer email" <${client.email}>`,
       to: process.env.ORDERS_EMAIL,
       subject: "New Buffet Order",
-      text:
-        `New cake order from ${client.name} (${client.email})\n\n` +
-        `Phone numer: ${client.phone}\n` +
-        `First Order: ${client.firstOrder}\n` +
-        `Delivery Date: ${client.eventDate}\n` +
-        `Buffet Selection:\n${buffetText}`,
+      html: `
+              <div style="font-family:Arial,sans-serif;max-width:600px;margin:auto;padding:24px;border-radius:8px;background:#faf7f2">
+                <h2 style="color:#d2691e">Nuevo pedido de buffet</h2>
+                <p><strong>Nombre:</strong> ${client.name}</p>
+                <p><strong>Email:</strong> ${client.email}</p>
+                <p><strong>Teléfono:</strong> ${client.phone}</p>
+                <p><strong>Primera vez:</strong> ${client.firstOrder}</p>
+                <p><strong>Fecha de entrega:</strong> ${client.eventDate}</p>
+                <h3 style="color:#d2691e">Selección de buffet:</h3>
+                ${buffetHtml}
+              </div>
+            `,
     };
     const response = await transporter.sendMail(mailOptions);
     if (!response) {

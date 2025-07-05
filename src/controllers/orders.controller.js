@@ -27,7 +27,7 @@ export const sendCakeOrder = async (req, res) => {
         pass: process.env.EMAIL_PASSWORD,
       },
     });
-    const mailOptions = {
+    /* const mailOptions = {
       from: `"Customer email" <${data.email}>`,
       to: process.env.ORDERS_EMAIL,
       subject: "New Cake Order",
@@ -60,6 +60,52 @@ export const sendCakeOrder = async (req, res) => {
         }\n` +
         `Special Instructions: ${data.instructions}\n\n` +
         `Delivery Date: ${data.eventDate}`,
+    }; */
+    const cakeHtml = `
+      <div style="font-family:Arial,sans-serif;max-width:600px;margin:auto;padding:24px;border-radius:8px;background:#faf7f2">
+        <h2 style="color:#d2691e">New Cake Order</h2>
+        <p><strong>Name:</strong> ${data.name}</p>
+        <p><strong>Email:</strong> ${data.email}</p>
+        <p><strong>Phone number:</strong> ${data.phone}</p>
+        <p><strong>First order:</strong> ${data.firstOrder}</p>
+        <p><strong>Delivery date:</strong> ${data.eventDate}</p>
+        <h3 style="color:#d2691e">Cake details:</h3>
+        <ul style="padding-left:16px">
+          <li><strong>Shape:</strong> ${data["Cake Shape"]}</li>
+          <li><strong>Flavor:</strong> ${
+            data["Cake Flavour"] === "Other"
+              ? data["Cake Flavour_other"]
+              : data["Cake Flavour"]
+          }</li>
+          <li><strong>Size:</strong> ${data["Cake Size"]}</li>
+          <li><strong>Decoration:</strong> ${
+            data["Decoration"] === "Other"
+              ? data["Decoration_other"]
+              : data["Decoration"]
+          }</li>
+          <li><strong>Filling:</strong> ${
+            data["Filling"] === "Other"
+              ? data["Filling_other"]
+              : data["Filling"]
+          }</li>
+          <li><strong>Icing:</strong> ${
+            data["Icing"] === "Other" ? data["Icing_other"] : data["Icing"]
+          }</li>
+          <li><strong>Inside the cake:</strong> ${
+            data["Inside the Cake"] === "Other"
+              ? data["Inside the Cake_other"]
+              : data["Inside the Cake"]
+          }</li>
+          <li><strong>Special instructions:</strong> ${data.instructions}</li>
+        </ul>
+      </div>
+    `;
+
+    const mailOptions = {
+      from: `"Customer email" <${data.email}>`,
+      to: process.env.ORDERS_EMAIL,
+      subject: "New Cake Order",
+      html: cakeHtml,
     };
     const response = await transporter.sendMail(mailOptions);
     if (!response) {
