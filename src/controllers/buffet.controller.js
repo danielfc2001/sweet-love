@@ -63,17 +63,17 @@ export const sendBuffetOrder = async (req, res) => {
       to: process.env.ORDERS_EMAIL,
       subject: "New Buffet Order",
       html: `
-              <div style="font-family:Arial,sans-serif;max-width:600px;margin:auto;padding:24px;border-radius:8px;background:#faf7f2">
-                <h2 style="color:#d2691e">Nuevo pedido de buffet</h2>
-                <p><strong>Nombre:</strong> ${client.name}</p>
-                <p><strong>Email:</strong> ${client.email}</p>
-                <p><strong>Teléfono:</strong> ${client.phone}</p>
-                <p><strong>Primera vez:</strong> ${client.firstOrder}</p>
-                <p><strong>Fecha de entrega:</strong> ${client.eventDate}</p>
-                <h3 style="color:#d2691e">Selección de buffet:</h3>
-                ${buffetHtml}
-              </div>
-            `,
+        <div style="font-family:Arial,sans-serif;max-width:600px;margin:auto;padding:24px;border-radius:8px;background:#faf7f2">
+          <h2 style="color:#d2691e">New Buffet Order</h2>
+          <p><strong>Name:</strong> ${client.name}</p>
+          <p><strong>Email:</strong> ${client.email}</p>
+          <p><strong>Phone number:</strong> ${client.phone}</p>
+          <p><strong>First order:</strong> ${client.firstOrder}</p>
+          <p><strong>Delivery date:</strong> ${client.eventDate}</p>
+          <h3 style="color:#d2691e">Buffet selection:</h3>
+          ${buffetHtml}
+        </div>
+      `,
     };
     const response = await transporter.sendMail(mailOptions);
     if (!response) {
